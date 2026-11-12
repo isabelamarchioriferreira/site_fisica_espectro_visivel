@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090d1c;
+    color: #f4f2ff;
+}
+
+header {
+    background: #10162b;
+    padding: 20px 6%;
+    border-bottom: 2px solid #7956d8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.logo span,
+footer span {
+    color: #b58aff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #d8d5e8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #c6a7ff;
+}
+
+.inicio {
+    min-height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(rgba(7, 10, 25, 0.72), rgba(7, 10, 25, 0.88)),
+                url("https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1600");
+    background-position: center;
+    background-size: cover;
+}
+
+.conteudo-inicio {
+    max-width: 850px;
+}
+
+.subtitulo {
+    color: #c2a1ff;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.inicio h2 {
+    font-size: 58px;
+    letter-spacing: 3px;
+}
+
+.inicio h2 span {
+    color: #b58aff;
+}
+
+.inicio p {
+    color: #e0deeb;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 22px auto 30px;
+}
+
+.botao {
+    display: inline-block;
+    background: #8055df;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #a47af2;
+}
+
+.introducao {
+    text-align: center;
+    padding: 75px 10%;
+}
+
+.introducao h2,
+.titulo-secao h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    color: #c5c8d8;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: auto;
+}
+
+.espectro-imagem {
+    max-width: 760px;
+    margin: 35px auto 15px;
+    padding: 16px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.espectro-imagem img {
+    width: 100%;
+    display: block;
+}
+
+.legenda {
+    color: #929bb5 !important;
+    font-size: 12px;
+    margin-top: 15px !important;
+}
+
+.secao {
+    padding: 75px 10%;
+}
+
+.titulo-secao {
+    margin-bottom: 35px;
+}
+
+.titulo-secao span {
+    color: #b58aff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.titulo-secao h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.card-historia,
+.card-principal {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background: #141c35;
+    padding: 32px;
+    border: 1px solid #293354;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+    flex-wrap: wrap;
+}
+
+.card-historia div {
+    flex: 1;
+}
+
+.card-historia p,
+.biografia p {
+    color: #c9ccda;
+    line-height: 1.9;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.card-historia img {
+    width: 40%;
+    border-radius: 14px;
+}
+
+.card-principal > img {
+    width: 280px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.biografia {
+    flex: 1;
+}
+
+.biografia h3 {
+    color: #c5a6ff;
+    font-size: 30px;
+}
+
+.biografia .data {
+    color: #a98ce5;
+    margin: 7px 0 20px;
+}
+
+.outros-cientistas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.mini-cientista {
+    flex: 1;
+    min-width: 0;
+    background: #1a2342;
+    padding: 15px;
+    border: 1px solid #293354;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.mini-cientista img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.mini-cientista h3 {
+    color: #c5a6ff;
+    margin-top: 12px;
+}
+
+.mini-cientista p {
+    color: #c9ccda;
+    line-height: 1.9;
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin-top: 10px;
+}
+
+.texto-central {
+    color: #c5c8d8;
+    line-height: 1.9;
+    max-width: 850px;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.cards-caracteristicas,
+.cards-aplicacoes {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #151d36;
+    padding: 28px;
+    border: 1px solid #293354;
+    border-bottom: 3px solid #9569e8;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.card h3,
+.card-aplicacao h3 {
+    color: #c5a6ff;
+    margin-bottom: 13px;
+    font-size: 18px;
+}
+
+.card p,
+.card-aplicacao p {
+    color: #c2c6d6;
+    line-height: 1.8;
+    font-size: 13px;
+}
+
+.card:hover,
+.card-aplicacao:hover {
+    border-color: #a987f0;
+}
+
+.subtitulo-cores {
+    margin: 48px 0 22px;
+    font-size: 22px;
+}
+
+.cores {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cor {
+    min-height: 125px;
+    flex: 1;
+    min-width: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 5px #000000;
+}
+
+.cor {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cor:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cor span {
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+.violeta { background: #793bb4; }
+.azul { background: #2864c7; }
+.verde { background: #238653; }
+.amarelo { background: #b49a1d; }
+.laranja { background: #ca7025; }
+.vermelho { background: #b93443; }
+
+.card-aplicacao {
+    background: #171f39;
+    padding: 27px 23px;
+    border: 1px solid #293354;
+    border-radius: 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.icone {
+    font-size: 34px;
+    margin-bottom: 17px;
+}
+
+.saude .card-aplicacao {
+    background: #141c35;
+}
+
+.curiosidade {
+    text-align: center;
+    padding: 65px 10%;
+    background: linear-gradient(115deg, #4b3698 0%, #7968b9 45%, #9384c2 65%, #59439e 100%);
+}
+
+.curiosidade h2 {
+    font-size: 29px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.curiosidade p {
+    color: #f0eaff;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+footer {
+    background: #070a15;
+    text-align: center;
+    padding: 38px 20px;
+    border-top: 1px solid #293354;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #9da5bd;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 8px;
+}
+
+.creditos {
+    margin-top: 20px !important;
+}
