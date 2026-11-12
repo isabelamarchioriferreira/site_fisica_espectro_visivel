@@ -98,21 +98,6 @@ footer span {
     margin: 22px auto 30px;
 }
 
-.botao {
-    display: inline-block;
-    background: #8055df;
-    color: white;
-    text-decoration: none;
-    padding: 14px 30px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.botao:hover {
-    background: #a47af2;
-}
-
 .introducao {
     text-align: center;
     padding: 75px 10%;
@@ -409,6 +394,6 @@ footer p {
     margin: 8px;
 }
 
-.creditos {
+.nomes {
     margin-top: 20px !important;
 }
